@@ -5,28 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
+
   <header class="header">
-    <h1>
-      All awesome books
-    </h1>
+    <div class="head-container-1">
+      <div class="head-sec-1"><h1>Book Lists</h1></div>
+      <div class="head-sec-2"><i class="fa-solid fa-plus" id="open"></i></div>
+    </div>
+    <div class="head-container-2">
+      <form class="form">
+        <input type="text" placeholder="title" class="title-id">
+        <input type="text" placeholder="author" class="author-id">
+        <textarea type="text" placeholder="Write something ..." class="description-id"></textarea>
+        <button type="button" class="add-button">Add</button>
+      </form>
+    </div>
   </header>
   <main class="main">
-    <section class="section-1">
+    <section class="section">
+
+
       <div class="book-container">
-
+        <div class="book-sec-1">
+          <p>48 laws of power</p>
+          <p>Robert greene</p>
+          <p>optionnal description</p>
+        </div>
+        <div class="book-sec-2">
+          <i class="fa-solid fa-trash fa-shake"></i>
+        </div>
       </div>
-    </section>
 
-    <section class="section-2">
-      <form class="form">
-        <input type="text" name="title" class="book-data" id="title" placeholder="Title"><br>
-        <input type="text" name="author" class="book-data" id="author" placeholder="Author"><br>
-        <button type="submit" class="add-btn" id="add-book">submit</button>
-      </form>
+
+
     </section>
   </main>
+
   <script src="index.js"></script>
 </body>
 </html>
